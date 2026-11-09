@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "orange-invest-errand-agent"
 version = "2.0.0"
 description = "Errand Agent Enterprise — Multi-Tenant Agentic SaaS Platform"
-readme = "PRD.md"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "pydantic>=2.6.0",
