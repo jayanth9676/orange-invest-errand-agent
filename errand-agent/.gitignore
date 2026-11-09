@@ -1,0 +1,114 @@
+# ===============================================================================
+# Orange Invest - Errand Agent Enterprise .gitignore
+# ===============================================================================
+
+# Python artifacts and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments & package manager caches
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.uv-cache/
+
+# Testing, coverage, and profiling
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.agents/
+
+# Node / Frontend dependencies & builds
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+frontend/dist/
+dist/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+.vite/
+
+# Databases and transient SQLite runtime files
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+errand_demo.sqlite
+errand_demo.sqlite-shm
+errand_demo.sqlite-wal
+streamlit_errand.sqlite
+
+# Execution traces (ignore transient/heavy runs, preserve canonical sample trace)
+traces/*.jsonl
+!traces/sample_timeout_recovery_trace.jsonl
+**/traces/*.jsonl
+!**/traces/sample_timeout_recovery_trace.jsonl
+
+# Logs
+*.log
+logs/
+
+# Secrets and local environment configuration
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak

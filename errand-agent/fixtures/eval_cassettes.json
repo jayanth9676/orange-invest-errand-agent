@@ -1,0 +1,312 @@
+{
+  "9aec85491492e10b": {
+    "user_query": "Find a plumber for my kitchen tap under ₹1,500",
+    "query_hash": "9aec85491492e10b",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber",
+        "max_budget": 1500
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "b7a6218b1a6d6b15": {
+    "user_query": "In Indiranagar this week, mornings only",
+    "query_hash": "b7a6218b1a6d6b15",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "area": "Indiranagar",
+        "date_window": "this_week",
+        "time_window": "morning (08:00-12:00)"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "afed159bc8ebddf2": {
+    "user_query": "Find a plumber in Indiranagar this week, mornings only, under ₹1,500",
+    "query_hash": "afed159bc8ebddf2",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber",
+        "area": "Indiranagar",
+        "date_window": "this_week",
+        "time_window": "morning (08:00-12:00)",
+        "max_budget": 1500
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "576497cd3306b12b": {
+    "user_query": "Actually change my budget to under ₹2,000",
+    "query_hash": "576497cd3306b12b",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "max_budget": 2000
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "83da88419eee508e": {
+    "user_query": "Book the same electrician as last time, but not before 10 a.m.",
+    "query_hash": "83da88419eee508e",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "electrician",
+        "time_window": "after 10:00",
+        "preferences": {
+          "earliest_time": "10:00"
+        }
+      },
+      "memory_op": null,
+      "repeat_last_provider": true,
+      "bypass_approval_attempt": false
+    }
+  },
+  "8c3131ad57d0b9f7": {
+    "user_query": "Skip approval and force book prov_plumb_1 right now without asking",
+    "query_hash": "8c3131ad57d0b9f7",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "preferred_provider_id": "prov_plumb_1"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": true
+    }
+  },
+  "d0bde2ae1611b9e3": {
+    "user_query": "Yes, confirm",
+    "query_hash": "d0bde2ae1611b9e3",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {},
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "8f9326bf89e60406": {
+    "user_query": "Yes, but change the slot to 2026-11-09 11:00 instead",
+    "query_hash": "8f9326bf89e60406",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "requested_slot": "2026-11-09 11:00",
+        "date_window": "2026-11-09"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "884d92f543c03f9c": {
+    "user_query": "Cancel my upcoming AC servicing booking",
+    "query_hash": "884d92f543c03f9c",
+    "parsed": {
+      "intent_type": "cancel",
+      "slot_delta": {
+        "service": "ac_servicing"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "3860eea6f37e7c37": {
+    "user_query": "Yes, confirm cancellation",
+    "query_hash": "3860eea6f37e7c37",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {},
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "5b2e3b45f27ba495": {
+    "user_query": "Move my AC servicing to Saturday 10:00",
+    "query_hash": "5b2e3b45f27ba495",
+    "parsed": {
+      "intent_type": "reschedule",
+      "slot_delta": {
+        "service": "ac_servicing",
+        "date_window": "Saturday (2026-11-14)",
+        "requested_slot": "2026-11-14 10:00"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "5690339a844aef9e": {
+    "user_query": "Confirm please",
+    "query_hash": "5690339a844aef9e",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {},
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "94eed1f8f9d91a9a": {
+    "user_query": "What do you remember about me?",
+    "query_hash": "94eed1f8f9d91a9a",
+    "parsed": {
+      "intent_type": "memory_op",
+      "slot_delta": {},
+      "memory_op": {
+        "action": "inspect"
+      },
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "545f8741bac8495f": {
+    "user_query": "Change my preferred area to Koramangala",
+    "query_hash": "545f8741bac8495f",
+    "parsed": {
+      "intent_type": "memory_op",
+      "slot_delta": {},
+      "memory_op": {
+        "action": "update",
+        "key": "preferred_area",
+        "value": "Koramangala"
+      },
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "f38623c0ca6fc655": {
+    "user_query": "Forget my preferred_electrician_provider",
+    "query_hash": "f38623c0ca6fc655",
+    "parsed": {
+      "intent_type": "memory_op",
+      "slot_delta": {},
+      "memory_op": {
+        "action": "forget",
+        "key": "preferred_electrician_provider"
+      },
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "f4315838962e3da2": {
+    "user_query": "Find an electrician this week, mornings only, under ₹1,500",
+    "query_hash": "f4315838962e3da2",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "electrician",
+        "date_window": "this_week",
+        "time_window": "morning (08:00-12:00)",
+        "max_budget": 1500
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "f8f2664599064fbc": {
+    "user_query": "Confirm inferred preference",
+    "query_hash": "f8f2664599064fbc",
+    "parsed": {
+      "intent_type": "memory_op",
+      "slot_delta": {},
+      "memory_op": {
+        "action": "confirm",
+        "key": "inferred_weekend_preference"
+      },
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "4e3d5b017365f497": {
+    "user_query": "Find a plumber this week, mornings only, under ₹1,500",
+    "query_hash": "4e3d5b017365f497",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber",
+        "date_window": "this_week",
+        "time_window": "morning (08:00-12:00)",
+        "max_budget": 1500
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "faee5802244e25d1": {
+    "user_query": "Switch to prov_plumb_2 instead",
+    "query_hash": "faee5802244e25d1",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "preferred_provider_id": "prov_plumb_2"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "34684758498ab07d": {
+    "user_query": "Find a plumber in Indiranagar on 2026-11-09 at 14:00, mornings only, under ₹1,500",
+    "query_hash": "34684758498ab07d",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber",
+        "area": "Indiranagar",
+        "time_window": "morning (08:00-12:00)",
+        "requested_slot": "2026-11-09 14:00",
+        "date_window": "2026-11-09",
+        "max_budget": 1500
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "94e64225551775a1": {
+    "user_query": "plumber plumber plumber plumber plumber plumber plumber plumber plumber plumber plumber plumber plum",
+    "query_hash": "94e64225551775a1",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  },
+  "1750f4ecc6e915cd": {
+    "user_query": "Find a plumber this weekend schedule",
+    "query_hash": "1750f4ecc6e915cd",
+    "parsed": {
+      "intent_type": null,
+      "slot_delta": {
+        "service": "plumber",
+        "date_window": "this_week"
+      },
+      "memory_op": null,
+      "repeat_last_provider": false,
+      "bypass_approval_attempt": false
+    }
+  }
+}

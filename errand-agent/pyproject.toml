@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "errand-agent"
+version = "1.0.0"
+description = "Deterministic State-Machine Errand Agent with Zero-Trust Approval Middleware"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.6.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "httpx>=0.27.0",
+    "openai>=1.20.0",
+    "tiktoken>=0.8.0",
+    "pytest>=8.0.0",
+    "streamlit>=1.35.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-v"
